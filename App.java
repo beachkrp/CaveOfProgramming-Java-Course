@@ -2,8 +2,8 @@
 class Robot{
 	
 	// creating a method for demonstration
-	public void speak() {
-		System.out.println("Hello!");
+	public void speak(String text) {
+		System.out.println(text);
 	}
 }
 
@@ -13,7 +13,7 @@ public class App {
 		
 	//Creating a Robo instance
 		Robot sam = new Robot();
-		sam.speak();
+		sam.speak("Hi, I'm Sam");
 		
 	}
 
