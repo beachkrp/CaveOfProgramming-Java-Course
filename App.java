@@ -3,12 +3,13 @@ class Frog {
 	private String name;
 	private int age;
 	// Create setters
-	public void setName(String newName) {
-		name = newName;
+	
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setAge(int newAge) {
+	public void setAge(int age) {
 		
-		age= newAge;
+		this.age= age;
 	}
 	
 	
