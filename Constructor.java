@@ -1,6 +1,7 @@
 class Machine {
 	//Class variable
 	private String name;
+	private int code;
 	// Class constuctor
 
 	public Machine() {
@@ -8,10 +9,18 @@ class Machine {
 
 		name = "Arnie";
 	}
-	
+	//  Constructer with a name input
 	public Machine(String name) {
+		System.out.println("Second Constructor running");
 		
 		this.name = name; 
+	}
+	//Constructor with a name input and a code input
+	public Machine(String name, int code) {
+		System.out.println("Third Constructor running");
+		this.name = name;
+		this.code = code;
+		
 	}
 
 }
@@ -24,5 +33,9 @@ public class Constructor {
 
 		//Another machine instance.
 		Machine machine2 = new Machine("Bertie");
+		
+		//Create another instance
+		
+		Machine machine3 = new Machine("Chalky", 7);
 	}
 }
