@@ -5,15 +5,18 @@ class Machine {
 	// Class constuctor
 
 	public Machine() {
+		
+		//calling default constructor
+		this("Arnie", 0);
 		System.out.println("Constructor running");
-
-		name = "Arnie";
 	}
 	//  Constructer with a name input
 	public Machine(String name) {
+		//default constructor
+		this(name, 0);
 		System.out.println("Second Constructor running");
 		
-		this.name = name; 
+		 
 	}
 	//Constructor with a name input and a code input
 	public Machine(String name, int code) {
