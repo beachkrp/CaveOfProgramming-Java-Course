@@ -22,5 +22,21 @@ public class StringBuild {
 			
 			//output
 			System.out.println(sb.toString());
+			
+			// Second StringBuilder example
+			
+			StringBuilder s = new StringBuilder();
+			//Add to String Builder s
+			s.append("My name is Roger.")
+			.append(" ")
+			.append("I am a sky diver.");
+			
+			//OUtput
+			
+			System.out.println(s.toString());
+			
+			
+			
+			
 		}
 }
