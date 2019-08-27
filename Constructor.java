@@ -2,10 +2,16 @@ class Machine {
 	//Class variable
 	private String name;
 	// Class constuctor
+
 	public Machine() {
 		System.out.println("Constructor running");
 
 		name = "Arnie";
+	}
+	
+	public Machine(String name) {
+		
+		this.name = name; 
 	}
 
 }
@@ -17,6 +23,6 @@ public class Constructor {
 		Machine machine1 = new Machine();
 
 		//Another machine instance.
-		new Machine();
+		Machine machine2 = new Machine("Bertie");
 	}
 }
