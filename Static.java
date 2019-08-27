@@ -3,9 +3,13 @@
 class Thing{
 	public String name;
 	public static String description;
-	
+	//Create a method to show the name
 	public void showName() {
 		System.out.println(name);
+	}
+	//creating a static method
+	public static void showInfo() {
+		System.out.println(description);
 	}
 }
 
@@ -16,6 +20,8 @@ public class Static {
 	Thing.description = "I am a thing";
 	System.out.println(Thing.description);
 	
+	//using static method showInfo
+	Thing.showInfo();
 	//Create Thing objects
 	
 	Thing thing1 = new Thing();
