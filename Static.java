@@ -6,9 +6,21 @@ class Thing{
 	
 	public String name;
 	public static String description;
+	
+	public static int count = 0;
+	
+	public int id;
+	
+	public Thing() {
+		
+		//set id
+		id = count;
+		//Increment
+		count++;
+	}
 	//Create a method to show the name
 	public void showName() {
-		System.out.println(description + " :"+  name);
+		System.out.println("Object id "  + id  + ", " + description + " :"+  name);
 	}
 	//creating a static method
 	public static void showInfo() {
@@ -22,6 +34,9 @@ public class Static {
 	//Set description
 	Thing.description = "I am a thing";
 	System.out.println(Thing.description);
+	
+	//Output the number of things
+	System.out.println("Before creating anything count is   "+ Thing.count);
 	
 	//using static method showInfo
 	Thing.showInfo();
@@ -51,6 +66,9 @@ public class Static {
 	System.out.println(Math.PI);
 	
 	System.out.println(Thing.LUCKY_NUMBER);
+	
+	//Output the number of things
+	System.out.println("The number of thing creat " + Thing.count);
 	
 	}
 	
