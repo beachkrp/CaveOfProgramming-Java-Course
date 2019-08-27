@@ -1,11 +1,14 @@
 
 //Class definition
 class Thing{
+	
+	public final static int LUCKY_NUMBER = 318765;
+	
 	public String name;
 	public static String description;
 	//Create a method to show the name
 	public void showName() {
-		System.out.println(name);
+		System.out.println(description + " :"+  name);
 	}
 	//creating a static method
 	public static void showInfo() {
@@ -44,6 +47,10 @@ public class Static {
 	thing1.showName();
 	thing2.showName();
 	
+	//
+	System.out.println(Math.PI);
+	
+	System.out.println(Thing.LUCKY_NUMBER);
 	
 	}
 	
