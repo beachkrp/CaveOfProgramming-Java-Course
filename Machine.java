@@ -1,7 +1,7 @@
 
 public class Machine {
 	
-	String name  = "Machine Type1";
+	protected String name  = "Machine Type1";
 
 	public void start()
 	{
