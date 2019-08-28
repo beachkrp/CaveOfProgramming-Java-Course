@@ -16,9 +16,23 @@ public class Interfaces {
 		mach1.showInfo();
 		person1.showInfo();
 		
-				
+		//Create info object
+		Info info1 = new Machine();
+		info1.showInfo();
 		
+		Info info2 =  person1;
+		info2.showInfo();
 		
+		//
+		outputInfo(mach1);
 	}
+
+
+
+
+private static void outputInfo(Info info) {
+	
+ info.showInfo();	
+}
 
 }
