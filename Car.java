@@ -5,5 +5,9 @@ public class Car extends Machine{
 		//Output
 		System.out.println("Wiping");
 	}
+	
+	public void start() {
+		System.out.println("Car Started");
+	}
 
 }
