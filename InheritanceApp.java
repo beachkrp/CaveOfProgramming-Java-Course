@@ -13,9 +13,11 @@ public class InheritanceApp {
 	
 		car1.start();
 	
-		car1.stop();
+		
 		//wiping
 		car1.wipeWindow();
+		car1.showInfo();
+		car1.stop();
 		
 		
 
