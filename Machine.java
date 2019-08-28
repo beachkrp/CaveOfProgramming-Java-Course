@@ -1,15 +1,11 @@
 
 public class Machine {
+	//class variables
+	private int id =7;
 	
-	protected String name  = "Machine Type1";
+	
+	public void start() {
+		System.out.println("Machine Started");
+	}
 
-	public void start()
-	{
-		System.out.println("Machine started");
-	}
-	
-	public void stop(){
-		System.out.println("Machine Stopped");
-		
-	}
 }
