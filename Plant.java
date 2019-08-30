@@ -7,11 +7,16 @@ public class Plant {
 	//Acceptable practice
 	//Static Instance variable
 	public final static int ID = 8;
+	//private variable
+	private String type;
 	
+	protected String size;
 	// Create a constructor
 	
 	public Plant() {
 		name = "Ficus";
+		type = "plant";
+		size = "large";
 	}
 	
 }
