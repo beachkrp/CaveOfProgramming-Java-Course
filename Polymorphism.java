@@ -9,7 +9,22 @@ public class Polymorphism {
 		Plant plant2 = tree;
 		// use methods
 		plant2.grow();
+		tree.shedLeaves();
+		//error
+		//plant2.shedLeaves();
+		
+		//Using the defined method
+		goGrow(tree);
+		goGrow(plant);
+		goGrow(plant2);
 		
 		
 	}
+
+
+public static void goGrow(Plant plant) {
+	plant.grow();
+	
+}
+
 }

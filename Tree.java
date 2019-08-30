@@ -5,5 +5,13 @@ public class Tree extends Plant {
 		
 		System.out.println("Tree growing");
 	} 
+	
+	public void shedLeaves()
+	
+	
+	{
+		System.out.println("Leaves falling");
+	}
 
 }
+
