@@ -1,3 +1,4 @@
+import world.Plant;
 
 public class PublicPrivateProtected {
 	
