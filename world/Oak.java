@@ -8,7 +8,7 @@ public class Oak extends Plant{
 		
 		// works
 		size= "Medium";
-
+		height = 10;
 	}
 	
 }

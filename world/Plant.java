@@ -14,10 +14,13 @@ public class Plant {
 	protected String size;
 	// Create a constructor
 	
+	int height;
+	
 	public Plant() {
 		name = "Ficus";
 		type = "plant";
 		size = "large";
+		height = 7;
 	}
 	
 }
