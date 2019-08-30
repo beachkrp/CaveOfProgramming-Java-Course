@@ -7,6 +7,8 @@ public class Polymorphism {
 		
 		// Create a second reference to the same object
 		Plant plant2 = tree;
+		// use methods
+		plant2.grow();
 		
 		
 	}
