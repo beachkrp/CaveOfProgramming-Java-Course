@@ -63,6 +63,12 @@ public class App {
 		machine2 = camera1;
 		machine2.start();
 		
+		//Downcasting
+		
+		Machine machine3 = new Camera();
+		Camera camera2 = (Camera)machine3;
+		camera2.snap();
+		
 		
 		
 	}
