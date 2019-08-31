@@ -1,3 +1,23 @@
+//Create a class
+class Machine{
+	//Create a method
+	public void start() {
+		System.out.println("Machine started");	
+	}
+}
+//Create a child class
+class Camera extends Machine{
+	//Override the method
+	public void start() {
+	System.out.println("Camera started");	
+	}
+	//Create another method
+	public void snap() {
+		System.out.println("Photo taken");
+	}
+}
+
+
 
 public class App {
 
@@ -28,6 +48,22 @@ public class App {
 		
 		byteValue = (byte)129;
 		System.out.println(byteValue);
+		
+		//Create instances of the classes
+		Machine machine1 = new Machine();
+		Camera camera1 = new Camera();
+		
+		//Demostrate the methodds.
+		machine1.start();
+		camera1.start();
+		camera1.snap();
+		
+		//Upcasting
+		Machine machine2 = new Camera();
+		machine2 = camera1;
+		machine2.start();
+		
+		
 		
 	}
 
