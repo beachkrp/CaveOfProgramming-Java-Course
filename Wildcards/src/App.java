@@ -45,7 +45,7 @@ public class App {
 		
 		}
 	//Declare another method
-	public static void showList(ArrayList<Machine> list0) {
+	public static void showList(ArrayList<? extends Machine > list0) {
 		for(Machine value: list0) {
 			//output
 			System.out.println(value);
@@ -53,4 +53,4 @@ public class App {
 		
 	}
 
-}
+}	
