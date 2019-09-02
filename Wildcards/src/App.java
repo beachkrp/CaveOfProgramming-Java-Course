@@ -7,6 +7,10 @@ class Machine {
 	public String toString() {
 		return "I am a Machine";
 	}
+	
+	public void  start() {
+		System.out.println("Machine starting");
+	}
 
 }
 
@@ -18,8 +22,9 @@ class Camera extends Machine {
 	@Override
 	public String toString() {
 		return "I am a Camera";
-
 	}
+	
+	
 }
 
 public class App {
@@ -45,10 +50,12 @@ public class App {
 		
 		}
 	//Declare another method
-	public static void showList(ArrayList<?> list0) {
-		for(Object value: list0) {
+	public static void showList(ArrayList<? extends Machine> list0) {
+		for(Machine value: list0) {
 			//output
 			System.out.println(value);
+			//
+			value.start();
 		}
 		
 	}
