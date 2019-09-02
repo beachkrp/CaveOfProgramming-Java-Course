@@ -17,13 +17,22 @@ class Machine {
 
 // Create child class
 class Camera extends Machine {
-
+	
+	
+//Overriding method
+	@Override
+	public void start() {
+	
+		System.out.println("Camera Started");
+	}
 	// Override an inherited method
 	@Override
 	public String toString() {
 		return "I am a Camera";
 	}
-	
+	public void snap() {
+		System.out.println("Photo taken");
+	}
 	
 }
 
@@ -56,6 +65,16 @@ public class App {
 			System.out.println(value);
 			//
 			value.start();
+		}
+		
+	}
+	//Lower bound	
+	public static void showList2(ArrayList<? super Camera> list0) {
+		for(Object value: list0) {
+			//output
+			System.out.println(value);
+			//
+			
 		}
 		
 	}
