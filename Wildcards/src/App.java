@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 // Create class
 class Machine {
+
+	@Override
+	public String toString() {
+		return "I am a Machine";
+	}
 	
 	
 }
@@ -12,21 +17,25 @@ class Camera extends Machine {
 
 
 public class App {
+	@Override
+	public String toString() {
+		return "App [toString()=" + super.toString() + "]";
+	}
 	public static void main(String[] args) {
 	//Create a generic variable
-		ArrayList<String> list = new ArrayList();
+		ArrayList<Machine> list = new ArrayList();
 		
 		//populate the Arraylist
-		list.add("one");
-		list.add("two");
+		list.add(new Machine());
+		list.add(new Machine());
 		
 		//show list contents
-		showList(list);
+		showList(list); 
 		
 		}
 	//Declare another method
-	public static void showList(ArrayList<String> list) {
-		for(String value: list) {
+	public static void showList(ArrayList<Machine> list) {
+		for(Machine value: list) {
 			//output
 			System.out.println(value);
 		}
