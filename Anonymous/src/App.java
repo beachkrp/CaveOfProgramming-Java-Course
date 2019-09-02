@@ -7,6 +7,10 @@ class Machine{
 	
 }
 
+interface Plant {
+	public void grow();
+}
+
 public class App {
 
 	public static void main(String[] args) {
@@ -21,7 +25,14 @@ public class App {
 		//
 		machine1.start();
 		
-
+		Plant plant1 = new Plant() {
+			public void grow() {
+				System.out.println("Growing......");
+				
+			}
+			
+		};
+		plant1.grow();
 	}
 
 }
