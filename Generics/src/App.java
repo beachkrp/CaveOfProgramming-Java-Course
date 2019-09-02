@@ -18,7 +18,20 @@ public class App {
 		//Output
 		System.out.println(fruit);
 		
+		////Modern Style
+		//Create an ArrayList
+		ArrayList<String> strings = new ArrayList();
+		//build the list
+		strings.add("cat");
+		strings.add("dog");
+		strings.add("alligator");
 		
+		//Retrieve data
+		
+		String animal = strings.get(1);
+		
+		//Output 
+		System.out.println(animal);
 	}
 
 }
