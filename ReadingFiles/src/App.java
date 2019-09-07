@@ -14,6 +14,14 @@ public class App {
 		//Create a Scanner object
 		Scanner in = new Scanner(textFile);
 		
+		//read in the file contents
+		while(in.hasNextLine()) {
+			
+			String line = in.nextLine();
+			
+			System.out.println(line);
+		}
+		
 		//Close the Scanner object
 		in.close();
 		
