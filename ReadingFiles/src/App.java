@@ -14,12 +14,21 @@ public class App {
 		//Create a Scanner object
 		Scanner in = new Scanner(textFile);
 		
+		//Read in the first line
+		int value = in.nextInt();
+		System.out.println("The value is:"  + value);
+		//Discard carriage return
+		in.nextLine();
+		
+		//
+		int lineNumber = 2;
 		//read in the file contents
 		while(in.hasNextLine()) {
 			
 			String line = in.nextLine();
 			
-			System.out.println(line);
+			System.out.println(lineNumber +" : " + line);
+			lineNumber++;
 		}
 		
 		//Close the Scanner object
