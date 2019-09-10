@@ -1,0 +1,12 @@
+	
+public  class App {
+
+	public static void main(String[] args) {
+		
+		Robot robot = new Robot(34);
+		robot.start();
+		
+
+	}
+
+}
