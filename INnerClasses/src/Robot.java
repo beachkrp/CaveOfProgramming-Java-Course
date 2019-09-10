@@ -29,6 +29,15 @@ public class Robot {
 
 	System.out.println("Starting  robot "+id);
 	brain.think();
+	
+	class Temp{
+		public void doSomthing() {
+			System.out.println("ID is : "+ id);
+			
+		}
+	}
+	Temp temp = new Temp();
+	temp.doSomthing();
 }
 
 }
