@@ -65,8 +65,21 @@ public class App {
 	//still gives false
 	
 	System.out.println(person1.equals(person3));
-	
 
+	//Declare a couple of doubles
+	Double value1 = 7.2;
+	Double value2 = 7.2;
+	
+	System.out.println(value1== value2);
+	
+	//Create two Integer values to compare
+	int  value3 = 4;
+	int value4 = 4;
+	
+	System.out.println(value3 ==value4 );
+	//using the .equals method for comparison of Double 
+	System.out.println(value1.equals(value2));
+	
 	
 	
 	
