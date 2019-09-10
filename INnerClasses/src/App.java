@@ -6,7 +6,8 @@ public  class App {
 		Robot robot = new Robot(34);
 		robot.start();
 		
-
+		Robot.Battery battery = new Robot.Battery();
+		battery.charge();
 	}
 
 }
