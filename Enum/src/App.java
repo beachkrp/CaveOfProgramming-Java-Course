@@ -30,6 +30,11 @@ public class App {
 		}
 		
 		System.out.println(Animal.DOG.getClass());
+		
+		System.out.println(Animal.CAT instanceof Animal);
+		System.out.println(Animal.CAT instanceof Enum);
+		
+		System.out.println(Animal.MOUSE.getName());
 	}
 
 }
