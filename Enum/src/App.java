@@ -30,11 +30,18 @@ public class App {
 		}
 		
 		System.out.println(Animal.DOG.getClass());
+		System.out.println("Enum name as a string  : " + Animal.DOG.name());
 		
 		System.out.println(Animal.CAT instanceof Animal);
 		System.out.println(Animal.CAT instanceof Enum);
 		
 		System.out.println(Animal.MOUSE.getName());
+		
+		System.out.println(Animal.DEER.toString());
+		
+		
+		Animal animal2 = Animal.valueOf("CAT");
+		System.out.println(animal2);
 	}
 
 }
